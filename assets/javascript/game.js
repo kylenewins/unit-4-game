@@ -21,7 +21,17 @@ var starter = "";
 $("#atkBtn").hide();
 $("#newBtn").hide();
 
-function gameStart(){ //reset function
+var pikaAudio = document.createElement('audio');
+    pikaAudio.setAttribute('src', 'assets/audio/pikachu.mp3')
+var bulbaAudio = document.createElement('audio');
+    bulbaAudio.setAttribute('src', 'assets/audio/bulbasaur.mp3')
+var charAudio = document.createElement('audio');
+    charAudio.setAttribute('src', 'assets/audio/charmander.mp3')
+var squirtAudio = document.createElement('audio');
+    squirtAudio.setAttribute('src', 'assets/audio/squirtle.mp3')
+
+//RESET FUNCTION
+function gameStart(){
 $(".defender .yourPoke .enemiesAvail").empty();
 $("#battleText").empty();
 
@@ -71,6 +81,7 @@ $("#pikachu").on("click", function(){//pikachu placement functions
     $("#pikaHP").text("HP: " + pikaHP)
     $("#pikaHP").show();
     if(opponentPick===true){
+        pikaAudio.play();
         $(".defender").append(pikachu);
         defender = "pikachu";
         $("#battleText").append("<br/>" + "A wild Pikachu Appeared!")
@@ -78,6 +89,7 @@ $("#pikachu").on("click", function(){//pikachu placement functions
         $("#atkBtn").show();
     }
     else if (opponentPick===false){
+        pikaAudio.play();
         starterPick=true;
         opponentPick=true;
         $(".yourPoke").append(pikachu);
@@ -99,6 +111,7 @@ $("#bulbasaur").on("click", function(){//bulbasaur placement functions
     $("#bulbaHP").show();
 
     if(opponentPick){
+        bulbaAudio.play();
         $(".defender").append(bulbasaur);
         defender = "bulbasaur"
         $("#battleText").append("<br/>" + "A wild Bulbasaur Appeared!")
@@ -107,6 +120,7 @@ $("#bulbasaur").on("click", function(){//bulbasaur placement functions
     }
 
     else if (opponentPick===false){
+        bulbaAudio.play();
         starterPick=true;
         opponentPick=true;
         $(".yourPoke").append(bulbasaur);
@@ -125,6 +139,7 @@ $("#charmander").on("click", function(){//charmander placement functions
     $("#charHP").show();
 
     if(opponentPick){
+        charAudio.play();
         $(".defender").append(charmander);
         defender = "charmander";
         $("#battleText").append("<br/>" + "A wild Charmander Appeared!")
@@ -132,6 +147,7 @@ $("#charmander").on("click", function(){//charmander placement functions
         $("#atkBtn").show();
     }
     else if (opponentPick===false){
+        charAudio.play();
         starterPick=true;
         opponentPick=true;
         $(".yourPoke").append(charmander);
@@ -150,6 +166,7 @@ $("#squirtle").on("click", function(){//squirtle placement functions
     $("#squirtHP").show();
 
     if(opponentPick){
+        squirtAudio.play();
         $(".defender").append(squirtle);
         defender = "squirtle";
         $("#battleText").append("<br/>" + "A wild Squirtle Appeared!")
@@ -157,6 +174,7 @@ $("#squirtle").on("click", function(){//squirtle placement functions
         $("#atkBtn").show();
     }
     else if (opponentPick===false){
+        squirtAudio.play();
         starterPick=true;
         opponentPick=true;
         $(".yourPoke").append(squirtle);
