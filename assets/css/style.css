@@ -13,13 +13,21 @@ body{
     color:red;
 }
 
-#pokePic {
+.pokePic {
     padding-left:25px;
+    height:75%;
+}
+
+
+.hpText {
+    color:green;
+    margin: 0px;
+    padding:0px;
 }
 
 #pikachu {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     border: 5px solid black;
     background: white;
     margin:20px;
@@ -31,8 +39,8 @@ body{
 
 
 #bulbasaur {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     border: 5px solid black;
     background: white;
     margin:20px;
@@ -43,8 +51,8 @@ body{
 }
 
 #charmander {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     border: 5px solid black;
     background: white;
     margin:20px;
@@ -55,8 +63,8 @@ body{
 }
 
 #squirtle {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     border: 5px solid black;
     background: white;
     margin:20px;
@@ -89,4 +97,11 @@ body{
     position:relative;
     top:20px;
     overflow: auto;  
+}
+
+.battleBox {
+    background-color: whitesmoke;
+    opacity: .5;
+    padding:10px;
+    border: 5px solid black;
 }

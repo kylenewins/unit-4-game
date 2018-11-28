@@ -6,51 +6,60 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 </head>
 
 <body>
-<div class = "charAvail">
-    <h1 class="funText">Choose Your Pokemon!</h1>
-    
-    <button id = "pikachu" type="button">
-        <p id= "pokeText">Pikachu!</p>
-        <img src="assets/images/pikachu.png" alt="pikachu" id = "pokePic">
-    </button>
+<div class = "container">
+    <div class = "row">
+        <div class = "col-lg-6">
+            <div class="charAvail">
+            <h1 class="funText text-center">Choose Your Pokemon!</h1>
+        
+                <button class= "pokeBtn" type="button" id = "pikachu">
+                    <p id= "pokeText">Pikachu!</p><p class="hpText" id= "pikaHP"></p>
+                    <img src="assets/images/pikachu.png" alt="pikachu" class = "pokePic">
+                </button>
 
-    <button type="button" id = "bulbasaur">
-        <p id="pokeText">Bulbasaur!</p>
-        <img src="assets/images/bulbasaur.png" alt="bulbasaur" id="pokePic">
-    </button>
+                <button class= "pokeBtn" type="button" id = "bulbasaur">
+                    <p id="pokeText">Bulbasaur!</p><p class="hpText" id= "bulbaHP"></p>
+                    <img src="assets/images/bulbasaur.png" alt="bulbasaur" class="pokePic">
+                </button>
 
-    <button type="button" id= "charmander">
-        <p id="pokeText">Charmander!</p>
-        <img src="assets/images/Charmander.png" alt="charmander" id="pokePic">
-    </button>
+                <button class= "pokeBtn" type="button" id= "charmander">
+                    <p id="pokeText">Charmander!</p><p class="hpText" id= "charHP"></p>
+                    <img src="assets/images/Charmander.png" alt="charmander" class="pokePic">
+                </button>
 
-    <button type="button" id = "squirtle">
-        <p id="pokeText">Squirtle!</p>
-        <img src="assets/images/squirtle.png" alt="squirtle" id="pokePic">
-    </button>
-</div>
+                <button class= "pokeBtn" type="button" id = "squirtle">
+                    <p id="pokeText">Squirtle!</p><p class="hpText" id= "squirtHP"></p>
+                    <img src="assets/images/squirtle.png" alt="squirtle" class="pokePic">
+                </button>
+            </div>
 
-<div class = "yourPoke">
-    <h2 class="funText">You Chose:</h2>
-</div>
-</br>
+            <div class = "yourPoke">
+                <h2 class="funText">You Chose:</h2>
+            </div>
 
-<div class = "enemiesAvail">
-    <h2 class="funText">Choose your Oponent!</h2>
-</div>
-</br>
+            <div class = "enemiesAvail">
+                <h2 class="funText">Choose your Oponent!</h2>
+            </div>
 
-<div class = "defender">
-    <h2 class="funText">Defender:</h2>
-</div>
-</br>
+            <div class = "defender">
+                <h2 class="funText">Defender:</h2>
+            </div>
+        </div>
 
+        <div class = "battleBox col-lg-6 text-center">
+                <button type="button" class="btn btn-primary" id="atkBtn">Attack</button>
+                <p id="battleText"></p>
+        </div>
+    </div>
+
+</div><!--container-->
 
 </body>
 </html>
