@@ -1,0 +1,92 @@
+body{
+    background-image: url('../../assets/images/background.png');
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.funText{
+    color:black;
+}
+
+#pokeText{
+    text-align: center;
+    color:red;
+}
+
+#pokePic {
+    padding-left:25px;
+}
+
+#pikachu {
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    background: white;
+    margin:20px;
+    float: left;
+}
+#pikachu:hover {
+    background: lightyellow;
+}
+
+
+#bulbasaur {
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    background: white;
+    margin:20px;
+    float: left;
+}
+#bulbasaur:hover {
+    background: lightgreen;
+}
+
+#charmander {
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    background: white;
+    margin:20px;
+    float: left;
+}
+#charmander:hover {
+    background: lightcoral;
+}
+
+#squirtle {
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    background: white;
+    margin:20px;
+    float: left;
+}
+#squirtle:hover{
+    background: lightblue;
+}
+
+.charAvail {
+    display: block;
+    overflow: auto;
+}
+.yourPoke{
+    display: block;
+    position:relative;
+    top:20px;
+    overflow: auto;
+}
+
+.enemiesAvail {
+    display: block;
+    position:relative;
+    top:20px;
+    overflow: auto;
+}
+
+.defender {
+    display: block;
+    position:relative;
+    top:20px;
+    overflow: auto;  
+}
