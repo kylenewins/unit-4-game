@@ -3,10 +3,12 @@
 <head>
     <meta chaset="UTF-8">
     <title>Pokemon RPG!</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"> 
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Chakra+Petch" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
@@ -17,7 +19,8 @@
     <div class = "row">
         <div class = "col-lg-12">
             <div class="charAvail">
-            <h1 class="funText text-center">Choose Your Pokemon!</h1>
+                <img src="assets/images/choose.png" alt="choose Your Pokemon!" id = "titleImg">
+                <h1 class="funText text-center">Choose Your Pokemon!</h1>
         
                 <button class= "pokeBtn" type="button" id = "pikachu">
                     <p id= "pokeText">Pikachu!</p><p class="hpText" id= "pikaHP"></p>
@@ -53,16 +56,15 @@
             </div>
         </div>
     </div>
-
-<div class = "row"> 
-    <div class = "battleBox col-lg-12 text-center">
+   
+    <div class ="row">
+        <div class = "col-lg-12 battleBox text-center">
             <p id="battleText"></p>
             <button type="button" class="btn btn-danger" id="atkBtn">Attack</button>
             <button type="button" class="btn btn-danger" id="resetBtn">Reset</button>
             <button type="button" class="btn btn-danger" id="newBtn">Next</button>
-
+        </div>
     </div>
-</div>  
 
 </div><!--container-->
 

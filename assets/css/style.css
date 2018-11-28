@@ -5,7 +5,19 @@ body{
 }
 
 .funText{
-    color:black;
+    color:#fdcd00;
+    text-shadow:
+       5px 5px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+#titleImg {
+    position: relative;
+    left: 275px;
 }
 
 #pokeText{
@@ -101,12 +113,13 @@ body{
 
 .battleBox {
     padding:10px;
-    background-color: whitesmoke;
     margin:20px;
-    border: 5px solid black;
+    background-color: whitesmoke;
+    border: 5px dashed black;
 }
 
 #battleText{
     opacity:100%;
     color:black;
+    font-family: 'Chakra Petch', sans-serif;
 }
