@@ -30,6 +30,7 @@ var charAudio = document.createElement('audio');
 var squirtAudio = document.createElement('audio');
     squirtAudio.setAttribute('src', 'assets/audio/squirtle.mp3')
 
+
 //RESET FUNCTION
 function gameStart(){
 $(".defender .yourPoke .enemiesAvail").empty();
@@ -75,7 +76,6 @@ $("#bulbasaur").show();
 $("#charmander").show();
 $("#squirtle").show();
 }
-
 
 $("#pikachu").on("click", function(){//pikachu placement functions
     $("#pikaHP").text("HP: " + pikaHP)
@@ -269,7 +269,7 @@ if((starter === "bulbasaur") && (defender === "pikachu")){
         $("#pikachu").hide();
         $("#newBtn").show();
         $("#atkBtn").hide();
-    }
+    } 
 } else if((starter === "bulbasaur") && (defender=== "squirtle")){
     squirtHP -= bulbaATK;
     bulbaHP -= squirtATK;
@@ -308,7 +308,7 @@ if((starter === "bulbasaur") && (defender === "pikachu")){
         $("#newBtn").show();
         $("#atkBtn").hide();
     } 
-}
+} 
 //CHARMANDER ATTACK FUNCTIONS
 if((starter === "charmander") && (defender === "pikachu")){
     charHP -= pikaATK;
@@ -428,18 +428,6 @@ if((starter === "squirtle") && (defender === "pikachu")){
 }
 
 })//attack button end
-
-
-
-
-
-
-
-
-
-
-
-
 
 $("#resetBtn").on("click", function(){
     gameStart();
